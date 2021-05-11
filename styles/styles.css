@@ -8,10 +8,90 @@ body{
     display: grid;
     grid-template: 70px 500px minmax(300px,1fr) / 600px 1fr 600px;
 }
+
+/*----------------MENU------------------*/
 .menu{
-    grid-area: 1 / 1 /2 / -1;
-    background: #0000;
+    grid-area: 1 / 1 /2 /-1;
+    /*background: #0000;*/
+    width: 100%;
+    height: 70px;
+
 }
+.titre-menu{
+    font-family: Playfair, Arial, sans-serif;
+    background: #fff;
+    /*color: black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    height: 70px;
+    position: relative;
+    z-index: 200;
+    border-bottom: 1px solid #000;
+
+}
+.menu:hover > .titre-menu{ /*Pour tous les elements que contient le menu*/
+    border-bottom: 0px solid #000;
+}
+.titre-menu::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    background: #000;
+    top: 61px;
+}
+
+.liste-menu{
+    background: white;
+    position: relative;
+    z-index: 100;
+    top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    border-bottom: 1px solid #000;
+}
+
+.titre-menu:hover + .liste-menu{/*concerne l'emlement suivant uniquement*/
+    transition: top 0.2s ease-in-out;
+    top: 0px;
+}
+.liste-menu:hover{
+    top: 0px;
+}
+.liste-menu li{
+    margin: 10px 0;
+}
+.liste-menu a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    position: relative;
+}
+.liste-menu a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+
+}
+.liste-menu a:hover::after{
+    transform: scale(1);
+}
+
+
+
+
 .presentation  {
     grid-area: 2 / 1 / 3 / 2 ;
     background: lightblue;
