@@ -95,7 +95,7 @@ body{
 
 .presentation  {
     grid-area: 2 / 1 / 3 / 2 ;
-    background: lightblue;
+    background: darkorange;
     padding: 40px;
 }
 
@@ -185,12 +185,73 @@ img.active{
 
 
 
-
+/*-----------CHOIX-----------*/
 .choix{
     grid-area: 3 / 1 / 4 / 3;
-    background: violet;
+    background: #222;
+    color: #f1f1f1;
+    border: 1px solid #000;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
+.titre-choix{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", "Times New Roman", sans-serif;
+
+}
+.choix p{
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.go-galerie{
+    font-size: 22px;
+    margin: 20px auto 0;
+    width: 300px;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 5px;
+    background: #222;
+    color: #f1f1f1;
+
+}
+.go-galerie:hover{
+    transition: all 0.2s ease;
+    background: #f1f1f1;
+    color: #222;
+
+}
+.cont-medias{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.media{
+    margin: 10px 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.media img{
+    width: 25px;
+}
+
+/*-----------CONTACT-----------*/
 .contact{
     grid-area: 3 / 3 / 4 / 4;
-    background: red;
+    background: darkorange;
 }
