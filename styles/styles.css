@@ -95,7 +95,7 @@ body{
 
 .presentation  {
     grid-area: 2 / 1 / 3 / 2 ;
-    background: darkorange;
+    background: yellow;
     padding: 40px;
 }
 
@@ -253,5 +253,130 @@ img.active{
 /*-----------CONTACT-----------*/
 .contact{
     grid-area: 3 / 3 / 4 / 4;
-    background: darkorange;
+    background: aqua ;
+    color: #000000;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact h3{
+ font-size: 70px;
+    padding-left: 50px;
+    font-family: "Playfair Display", "Times New Roman", Times, sans-serif;
+
+}
+.go-contact{
+    flex-shrink: 0;/*ne va pas retrecir quand on va deformer la page*/
+    margin-right: 105px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+.go-contact:hover{
+    transform: scale(1.2);
+
+}
+.go-contact img{
+    width: 50px;
+    height: 50px;
+}
+
+/*----------RESPONSIVE---------*/
+@media screen and (max-width: 1400px) {
+    .cont-medias {
+        display: none;
+    }
+}
+    @media screen and (max-width: 1200px) {
+        /*reduction taille du grid*/
+        .grille-accueil {
+            grid-template: 70px 500px minmax(300px, 1fr) / 400px 1fr 400px;
+        }
+
+        .contact h3 {
+            font-size: 50px;
+            padding-left: 50px;
+        }
+
+        .go-contact {
+            width: 70px;
+            height: 70px;
+            margin-right: 55px;
+        }
+
+        .go-contact img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+@media sreen and (max-width: 950px){
+    .titre-choix {
+        max-font-size: 35px;
+    }
+
+ .go-galerie{
+    font-size: 18px;
+     width:250px;
+     padding: 18px;
+ }
+}
+
+@media screen and (max-width: 800px){
+
+    .presentation{
+        padding: 30px;
+    }
+    .presentation h1{
+        font-size: 60px;
+        margin-top: 5px;
+    }
+    .grille-accueil{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider{
+        height: 500px;
+    }
+    .titre-choix{
+        font-size: 28px;
+        margin: 20px 10px 20px;
+    }
+    .go-galerie{
+        font-size: 18px;
+        width: 230px;
+        padding: 16px;
+        margin: 20px auto 50px;
+    }
+    .presentation{
+        border-bottom: 1px solid #000;
+    }
+    .contact{
+        display: block;
+    }
+    .contact h3{
+        padding-left: 0;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+    .go-contact{
+        width: 70px;
+        height: 70px  ;
+        margin: 30px auto;
+    }
+    .go-contact img{
+        width: 35px;
+        height: 35px;
+    }
 }
