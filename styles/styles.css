@@ -18,7 +18,7 @@ body{
 
 }
 .titre-menu{
-    font-family: "Playfair Display", Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     background: #fff;
     /*color: black;*/
     display: flex;
@@ -161,6 +161,7 @@ img.active{
     height: auto;
     display: flex;
     justify-content: center;
+    /*padding-bottom: 5px;*/
 }
 .btn-nav{
     display: flex;
@@ -175,14 +176,14 @@ img.active{
     color: #333;
     background:   #f1f1f1f1;
     border: 1px solid #333;
+
 }
 .btn-nav img{
     width: 20px;
     height: 20px;
 
+
 }
-
-
 
 
 /*-----------CHOIX-----------*/
@@ -288,6 +289,15 @@ img.active{
     width: 50px;
     height: 50px;
 }
+/*FOOTER*/
+
+footer{
+    border-top: 1px dashed #000;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
 
 /*----------RESPONSIVE---------*/
 @media screen and (max-width: 1400px) {
@@ -344,9 +354,14 @@ img.active{
         display: flex;
         flex-direction: column;
     }
-
+.container-slides img{
+    object-fit: cover;
+}
     .slider{
         height: 500px;
+    }
+    .btn-nav .left{
+        padding-bottom: 50px;
     }
     .titre-choix{
         font-size: 28px;
