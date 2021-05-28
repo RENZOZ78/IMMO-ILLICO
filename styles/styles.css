@@ -102,11 +102,14 @@ body{
 .presentation img{
 width: 80px;
 }
-.presentation h1{
+
+.titre-site{
     font-size: 80px;
     font-family: "Playfair Display", 'Times New Roman',Times, serif;
     font-weight: 700;
 }
+
+
 .presentation p{
     font-size: 15px;
     margin-top: 20px;
@@ -395,3 +398,21 @@ footer{
         height: 35px;
     }
 }
+
+
+
+/*----------------EFFET TITRE SITE----------------*/
+
+
+
+.titre-site img{
+    weight: 100px;
+    height: 100px;
+}
+
+.titre-site .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+

@@ -34,3 +34,46 @@ function slidePrecedente(){
     }
     itemsSlide[count].classList.add('active');
 }
+
+// TITRE ANIMATION
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.titre-site');
+var textIcon = document.querySelector('.incon-img');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// textIcon.innerHTML = textIcon.textContent.replace(/\S/g, "<span class='img'>$&</span>");
+
+anime.timeline({loop: true})
+    .add({
+        targets: '.titre-site .letter',
+        scale: [4,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70*i
+    }).add({
+    targets: '.titre-site',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+});
+
+// anime.timeline({loop: true})
+//     .add({
+//             targets: '.icon-img .img',
+//             scale: [4,1],
+//             opacity: [0,1],
+//             translateZ: 0,
+//             easing: "easeOutExpo",
+//             duration: 950,
+//             delay: (el, i) => 70*i
+//         }).add({
+//         targets: '.icon-img',
+//         opacity: 0,
+//         duration: 1000,
+//         easing: "easeOutExpo",
+//         delay: 1000
+//     });
+
