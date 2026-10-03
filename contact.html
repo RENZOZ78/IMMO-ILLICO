@@ -1,85 +1,236 @@
-<!doctype html>
-<html lang=fr>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DELTA-IMMO</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="preconnect » href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2? famille =Open+Sans&famille=Playfair+Display+SC:ital@1&display=swap » rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Delta-Immo</title>
+  <meta name="description" content="Contactez Delta-Immo pour une estimation offerte, une recherche sur mesure ou un simple conseil. Réponse sous 24 heures ouvrées, en toute confidentialité.">
+  <meta name="theme-color" content="#0e0f12">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Delta-Immo">
+  <meta property="og:title" content="Contact · Delta-Immo">
+  <meta property="og:description" content="Contactez Delta-Immo pour une estimation offerte, une recherche sur mesure ou un simple conseil. Réponse sous 24 heures ouvrées, en toute confidentialité.">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="ressources/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/contact.css">
 </head>
-<body>
+<body class="page-contact">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header " data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Delta-Immo, retour à l'accueil">
+      <svg class="brand__mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"/></svg>
+      <span class="brand__name">Delta<span>-</span>Immo</span>
+    </a>
+    <nav class="site-nav" id="navigation" aria-label="Navigation principale">
+      <ul class="site-nav__list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="portfolio.html">Nos biens</a></li>
+        <li><a href="informations.html">L'agence</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--gold site-nav__cta" href="contact.html">Estimation offerte</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-<!--    ------------------MENU---------------------------------------->
-<div class="menu">
-    <h2 class="titre-menu">CONTACT</h2>
-    <ul class="liste-menu">
-        <li class="item-nav"><a href="./index.html">Accueil</a></li>
-        <li class="item-nav"><a href="./informations.html">Informations</a></li>
-        <li class="item-nav"><a href="./portfolio.html">Tous nos biens</a></li>
-        <li class="item-nav"><a href="./contact.html">Contact</a></li>
-    </ul>
-</div>
+<main id="contenu">
 
-<h1 class="titre-contact">Entrons en contact</h1>
-<p class="contact-sous-titre">Contactez-nous par mail, téléphone ou par la poste</p>
-
-
-
-<div class="trois-contact">
-    <div class="box">
-        <img src="ressources/placeholder.svg" alt="" >
-        <span>9 rue des tonneliers, 88888 Paris</span>
+  <section class="page-header">
+    <div class="container page-header__inner">
+      <p class="eyebrow reveal">Contact</p>
+      <h1 data-split>Entrons en contact.</h1>
+      <p class="lead reveal" style="--delay:.35s">Par téléphone, par e-mail ou à l'agence : un conseiller vous répond sous 24 heures ouvrées, en toute confidentialité.</p>
     </div>
-    <div class="box">
-        <img src="ressources/phone-call.svg" alt="" >
-        <span>+ 5 6464 4649 </span>
-    </div>
-    <div class="box">
-        <img src="ressources/email.svg" alt="" >
-        <span>contact@delta-immo.com</span>
-    </div>
-</div>
+  </section>
 
+  <section class="section section--tight">
+    <div class="container contact-layout">
 
-    <form action="">
-        <h2>Parlez-nous de vos envies</h2>
-
-        <label for="prenom" class="label-input" >Votre prénom</label>
-        <input type="text" id="prenom" placeholder="Votre prénom" >
-
-        <label for="prenom" class="label-input" >Votre prénom</label>
-        <input type="text" id="nom" placeholder="Votre nom" >
-
-        <label for="tel" class="label-input" >Votre téléphone</label>
-        <input type="number" id="tel" placeholder="Votre téléphone" >
-
-        <p class="titre-check">Type de bien: </p>
-        <div class="groupe-check">
-            <label for="louer" class="labels-check" >Louer</label>
-            <input type="checkbox" id="louer" name="louer" >
+      <!-- ---------- Coordonnées ---------- -->
+      <aside class="contact-aside" aria-label="Coordonnées de l'agence">
+        <div class="contact-card reveal">
+          <span class="contact-card__icon"><img src="ressources/placeholder.svg" alt="" width="20" height="20"></span>
+          <div class="contact-card__body">
+            <span class="contact-card__label">L'agence</span>
+            <address class="contact-card__value">9 rue des Tonneliers<br>75008 Paris</address>
+            <span class="contact-card__note">Sur rendez-vous, du lundi au samedi</span>
+          </div>
         </div>
-        <div class="groupe-check">
-            <label for="acheter" class="labels-check" >Acheter</label>
-            <input type="checkbox" id="acheter" name="acheter" >
+        <div class="contact-card reveal" style="--delay:.1s">
+          <span class="contact-card__icon"><img src="ressources/phone-call.svg" alt="" width="20" height="20"></span>
+          <div class="contact-card__body">
+            <span class="contact-card__label">Téléphone</span>
+            <p class="contact-card__value"><a href="tel:+33145000000">+33&nbsp;1&nbsp;45&nbsp;00&nbsp;00&nbsp;00</a></p>
+            <span class="contact-card__note">Ligne directe, 9h – 19h</span>
+          </div>
+        </div>
+        <div class="contact-card reveal" style="--delay:.2s">
+          <span class="contact-card__icon"><img src="ressources/email.svg" alt="" width="20" height="20"></span>
+          <div class="contact-card__body">
+            <span class="contact-card__label">E-mail</span>
+            <p class="contact-card__value"><a href="mailto:contact@delta-immo.com">contact@delta-immo.com</a></p>
+            <span class="contact-card__note">Réponse sous 24 h ouvrées</span>
+          </div>
+        </div>
+        <div class="hours reveal" style="--delay:.3s">
+          <h3>Horaires</h3>
+          <dl>
+            <dt>Lundi – Vendredi</dt><dd>9h – 19h</dd>
+            <dt>Samedi</dt><dd>10h – 18h</dd>
+            <dt>Dimanche</dt><dd>Sur rendez-vous</dd>
+          </dl>
+        </div>
+      </aside>
+
+      <!-- ---------- Formulaire ---------- -->
+      <div class="form-card reveal" style="--delay:.15s">
+        <div class="form-card__head">
+          <p class="eyebrow">Votre projet</p>
+          <h2>Parlez-nous de vos envies</h2>
+          <p>Quelques lignes suffisent : nous vous rappelons pour affiner ensemble votre recherche ou organiser l'estimation de votre bien.</p>
         </div>
 
-        <label for="txt">Message</label>
-        <textarea name="" placeholder="Votre message"></textarea>
+        <form class="form-grid" name="contact" method="POST" action="merci.html" data-netlify="true" netlify-honeypot="bot-field" data-contact-form novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <p class="visually-hidden" aria-hidden="true">
+            <label>Ne pas remplir ce champ : <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label>
+          </p>
 
-        <button type="submit" >Envoyer</button>
+          <div class="field">
+            <label for="prenom">Prénom <span class="req" aria-hidden="true">*</span></label>
+            <input id="prenom" name="prenom" type="text" autocomplete="given-name" placeholder="Camille" required>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="nom">Nom <span class="req" aria-hidden="true">*</span></label>
+            <input id="nom" name="nom" type="text" autocomplete="family-name" placeholder="Durand" required>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">E-mail <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="camille@exemple.fr" required>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="telephone">Téléphone</label>
+            <input id="telephone" name="telephone" type="tel" autocomplete="tel" placeholder="+33 6 00 00 00 00">
+            <p class="field__error" aria-live="polite"></p>
+          </div>
 
+          <fieldset class="field field--full">
+            <legend class="field__legend">Votre projet</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="projet" value="Acheter" checked><span>Acheter</span></label>
+              <label class="choice"><input type="radio" name="projet" value="Vendre"><span>Vendre</span></label>
+              <label class="choice"><input type="radio" name="projet" value="Louer"><span>Louer</span></label>
+              <label class="choice"><input type="radio" name="projet" value="Faire estimer"><span>Faire estimer</span></label>
+            </div>
+          </fieldset>
 
-    </form>
+          <div class="field field--full">
+            <label for="budget">Budget envisagé</label>
+            <span class="select">
+              <select id="budget" name="budget">
+                <option value="">Non précisé</option>
+                <option value="Moins de 1 M€">Moins de 1 M€</option>
+                <option value="1 à 3 M€">1 à 3 M€</option>
+                <option value="3 à 5 M€">3 à 5 M€</option>
+                <option value="Plus de 5 M€">Plus de 5 M€</option>
+              </select>
+            </span>
+          </div>
 
+          <div class="field field--full">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" minlength="20" placeholder="Décrivez votre projet : type de bien, localisation, délais…" required></textarea>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
 
+          <label class="consent field--full">
+            <input type="checkbox" name="consentement" value="oui" required>
+            <span>J'accepte que mes informations soient utilisées pour traiter ma demande et être recontacté(e). <a href="mentions-legales.html#donnees">En savoir plus</a></span>
+            <span class="field__error" aria-live="polite"></span>
+          </label>
 
-<footer>Tous droits réservés &copy;DidierB  </footer>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
 
-<script src="script/contact.js"></script>
+          <div class="form-actions">
+            <button class="btn" type="submit">Envoyer ma demande <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <small>* Champs obligatoires · Réponse sous 24 h ouvrées</small>
+          </div>
+        </form>
+
+        <div class="form-success" data-form-success>
+          <span class="form-success__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5L20 7"/></svg></span>
+          <h2>Merci, votre message est bien arrivé.</h2>
+          <p>Un conseiller Delta-Immo vous recontacte sous 24 heures ouvrées pour échanger sur votre projet.</p>
+          <a class="text-link" href="portfolio.html">Découvrir nos biens en attendant <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Delta-Immo, retour à l'accueil">
+          <svg class="brand__mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"/></svg>
+          <span class="brand__name">Delta<span>-</span>Immo</span>
+        </a>
+        <p class="site-footer__tagline">Immobilier de prestige à Paris, sur la Côte d'Azur et dans les plus belles régions de France. Hôtels particuliers, villas, châteaux : une sélection confidentielle, un accompagnement sur mesure.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="ressources/instagram.svg" alt="" width="17" height="17"></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><img src="ressources/twitter.svg" alt="" width="17" height="17"></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><img src="ressources/facebook.svg" alt="" width="17" height="17"></a>
+        </div>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul class="site-footer__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="portfolio.html">Nos biens</a></li>
+          <li><a href="informations.html">L'agence</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Nos services</h3>
+        <ul class="site-footer__links">
+          <li><a href="informations.html#services">Estimation confidentielle</a></li>
+          <li><a href="portfolio.html">Achat d'un bien d'exception</a></li>
+          <li><a href="informations.html#processus">Vente &amp; mise en valeur</a></li>
+          <li><a href="informations.html#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          <span>9 rue des Tonneliers<br>75008 Paris</span>
+          <a href="tel:+33145000000">+33&nbsp;1&nbsp;45&nbsp;00&nbsp;00&nbsp;00</a>
+          <a href="mailto:contact@delta-immo.com">contact@delta-immo.com</a>
+          <span>Lundi – Samedi · 9h – 19h</span>
+        </address>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year>2026</span> Delta-Immo · Tous droits réservés · DidierB</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#donnees">Confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script/main.js" defer></script>
+<script src="script/effects.js" defer></script>
+<script src="script/contact.js" defer></script>
 </body>
 </html>

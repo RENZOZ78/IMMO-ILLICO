@@ -1,0 +1,11 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Netlify (état local du CLI)
+.netlify/
