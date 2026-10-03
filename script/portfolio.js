@@ -86,8 +86,10 @@
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
 
-  function show(i) {
+  function show(i, dir) {
     list = visibleCards();
+    lightbox.classList.remove('is-next', 'is-prev');
+    if (dir) lightbox.classList.add('is-' + dir);
     if (!list.length) return;
     current = (i + list.length) % list.length;
     var card = list[current];
@@ -151,8 +153,8 @@
   });
 
   closeBtn.addEventListener('click', close);
-  nextBtn.addEventListener('click', function () { show(current + 1); });
-  prevBtn.addEventListener('click', function () { show(current - 1); });
+  nextBtn.addEventListener('click', function () { show(current + 1, 'next'); });
+  prevBtn.addEventListener('click', function () { show(current - 1, 'prev'); });
 
   lightbox.addEventListener('click', function (e) {
     if (e.target === lightbox || e.target.classList.contains('lightbox__stage') || e.target.classList.contains('lightbox__figure')) close();
@@ -161,8 +163,8 @@
   document.addEventListener('keydown', function (e) {
     if (!lightbox.classList.contains('is-open')) return;
     if (e.key === 'Escape') close();
-    if (e.key === 'ArrowRight') show(current + 1);
-    if (e.key === 'ArrowLeft') show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1, 'next');
+    if (e.key === 'ArrowLeft') show(current - 1, 'prev');
     if (e.key === 'Tab') {
       // Boucle du focus à l'intérieur de la visionneuse
       var focusables = [closeBtn, prevBtn, nextBtn];
@@ -178,7 +180,7 @@
   lightbox.addEventListener('touchend', function (e) {
     if (startX === null) return;
     var delta = e.changedTouches[0].clientX - startX;
-    if (Math.abs(delta) > 50) show(delta < 0 ? current + 1 : current - 1);
+    if (Math.abs(delta) > 50) show(delta < 0 ? current + 1 : current - 1, delta < 0 ? 'next' : 'prev');
     startX = null;
   }, { passive: true });
 

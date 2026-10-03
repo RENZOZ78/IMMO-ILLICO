@@ -45,7 +45,7 @@
 
   <!-- ======================= HERO ======================= -->
   <section class="hero" data-hero aria-roledescription="carrousel" aria-label="Demeures à la une">
-    <div class="hero__slides">
+    <div class="hero__slides" data-parallax="0.22">
       <figure class="hero__slide is-active" data-title="Galerie des colonnes" data-meta="Hôtel particulier · Paris 8e">
         <picture>
           <source type="image/webp" media="(max-width: 900px)" srcset="ressources/img1Slide-1080.webp">
@@ -99,6 +99,15 @@
     </div>
   </section>
 
+
+  <!-- ======================= DÉFILEMENT ======================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Paris</span><i></i><span>Côte d'Azur</span><i></i><span>Saint-Tropez</span><i></i><span>Biarritz</span><i></i><span>Deauville</span><i></i><span>Val de Loire</span><i></i><span>Annecy</span><i></i><span>Bordeaux</span><i></i><span>Versailles</span><i></i><span>Bourgogne</span><i></i>
+      <span>Paris</span><i></i><span>Côte d'Azur</span><i></i><span>Saint-Tropez</span><i></i><span>Biarritz</span><i></i><span>Deauville</span><i></i><span>Val de Loire</span><i></i><span>Annecy</span><i></i><span>Bordeaux</span><i></i><span>Versailles</span><i></i><span>Bourgogne</span><i></i>
+    </div>
+  </div>
+
   <!-- ======================= INTRO ======================= -->
   <section class="section intro" id="intro">
     <div class="container">
@@ -114,10 +123,10 @@
         </div>
       </div>
       <div class="stats">
-        <div class="stat reveal"><span class="stat__value">1998</span><span class="stat__label">année de fondation, à Paris</span></div>
-        <div class="stat reveal" style="--delay:.1s"><span class="stat__value">340</span><span class="stat__label">propriétés d'exception vendues</span></div>
-        <div class="stat reveal" style="--delay:.2s"><span class="stat__value">98<sup>%</sup></span><span class="stat__label">de clients qui nous recommandent</span></div>
-        <div class="stat reveal" style="--delay:.3s"><span class="stat__value">12</span><span class="stat__label">conseillers dédiés, Paris &amp; Côte d'Azur</span></div>
+        <div class="stat reveal"><span class="stat__value" data-count-to="1998" data-count-from="1900">1998</span><span class="stat__label">année de fondation, à Paris</span></div>
+        <div class="stat reveal" style="--delay:.1s"><span class="stat__value" data-count-to="340">340</span><span class="stat__label">propriétés d'exception vendues</span></div>
+        <div class="stat reveal" style="--delay:.2s"><span class="stat__value"><span data-count-to="98">98</span><sup>%</sup></span><span class="stat__label">de clients qui nous recommandent</span></div>
+        <div class="stat reveal" style="--delay:.3s"><span class="stat__value" data-count-to="12">12</span><span class="stat__label">conseillers dédiés, Paris &amp; Côte d'Azur</span></div>
       </div>
     </div>
   </section>
@@ -233,7 +242,7 @@
 
   <!-- ======================= GRAND VISUEL ======================= -->
   <section class="showcase">
-    <picture>
+    <picture data-parallax="0.12">
       <source type="image/webp" media="(max-width: 900px)" srcset="ressources/img2Slide-1080.webp">
       <source type="image/webp" srcset="ressources/img2Slide.webp">
       <img src="ressources/img2Slide.jpg" alt="" width="1280" height="500" loading="lazy" decoding="async">
@@ -320,6 +329,7 @@
   </div>
 </footer>
 <script src="script/main.js" defer></script>
+<script src="script/effects.js" defer></script>
 <script src="script/home.js" defer></script>
 </body>
 </html>
